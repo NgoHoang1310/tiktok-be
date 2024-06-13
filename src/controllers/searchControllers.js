@@ -1,16 +1,13 @@
 import { searchServices } from '../services';
+import { StatusCodes } from 'http-status-codes';
 
-const search = async (req, res) => {
+const search = async (req, res, next) => {
     try {
         const payload = req.query;
         const data = await searchServices.handleSearch(payload);
-        return res.status(200).json(data);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
     } catch (error) {
-        console.log(error);
-        return res.status(200).json({
-            errCode: -1,
-            message: 'Error from server',
-        });
+        next(error);
     }
 };
 

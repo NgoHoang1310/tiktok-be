@@ -1,30 +1,24 @@
 import { videoServices } from '../services';
+import { StatusCodes } from 'http-status-codes';
 
-const uploadVideo = async (req, res) => {
+const uploadVideo = async (req, res, next) => {
     try {
         const payload = { ...req.body, ...req.file };
         const data = await videoServices.handleUploadVideo(payload);
-        return res.status(200).json(data);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
     } catch (error) {
-        console.log(error);
-        return res.status(200).json({
-            errCode: -1,
-            message: 'Error from server',
-        });
+        next(error);
     }
 };
 
-const getListVideos = async (req, res) => {
+const getVideos = async (req, res, next) => {
     try {
-        const data = await videoServices.handleGetListVideos();
-        return res.status(200).json(data);
+        const payload = req.query;
+        const data = await videoServices.handleGetVideos(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
     } catch (error) {
-        console.log(error);
-        return res.status(200).json({
-            errCode: -1,
-            message: 'Error from server',
-        });
+        next(error);
     }
 };
 
-export { uploadVideo, getListVideos };
+export { uploadVideo, getVideos };

@@ -1,22 +1,15 @@
-import { db } from '../firebase/config';
 import User from '../models/User';
-
+import ApiError from '../utils/apiError';
+import { StatusCodes } from 'http-status-codes';
 const handleSearch = (payload) => {
     return new Promise(async (resolve, reject) => {
         try {
             if (!payload?.q || !payload?.type) {
-                resolve({
-                    errCode: 1,
-                    errMessage: 'Missing data input !',
-                });
+                throw new ApiError(StatusCodes.BAD_REQUEST, 'Invalid input !');
             } else {
                 const keyWord = new RegExp(payload.q, 'i');
                 let data = await User.find({ nickName: { $regex: keyWord } });
-                resolve({
-                    errCode: 0,
-                    errMessage: 'Searching complete !',
-                    data,
-                });
+                resolve(data);
             }
         } catch (error) {
             reject(error);
