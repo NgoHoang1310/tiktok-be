@@ -21,4 +21,15 @@ const getVideos = async (req, res, next) => {
     }
 };
 
-export { uploadVideo, getVideos };
+const getFollowingVideos = async (req, res, next) => {
+    try {
+        const payload = req.params;
+        console.log(payload);
+        const data = await videoServices.handleGetFollowingVideos(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
+    } catch (error) {
+        next(error);
+    }
+};
+
+export { uploadVideo, getVideos, getFollowingVideos };

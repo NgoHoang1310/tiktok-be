@@ -8,32 +8,32 @@ import { generateAccessToken, generateRefreshToken } from '../utils';
 import client from '../configs/connectRD';
 dotenv.config();
 
-const handleAuthWithPlugin = (payload) => {
-    return new Promise(async (resolve, reject) => {
-        try {
-            if (!payload?.uid || !payload?.fullName || !payload?.email) {
-                reject({
-                    errCode: 1,
-                    errMessage: 'Missing data input !',
-                });
-            } else {
-                let data = {};
-                if (payload.isNewUser) {
-                    console.log(payload);
-                    await User.create(payload);
-                }
-                data = await User.findOne({ uid: payload.uid });
-                resolve({
-                    errCode: 0,
-                    errMessage: 'Authentication success !',
-                    data,
-                });
-            }
-        } catch (error) {
-            reject(error);
-        }
-    });
-};
+// const handleAuthWithPlugin = (payload) => {
+//     return new Promise(async (resolve, reject) => {
+//         try {
+//             if (!payload?.uid || !payload?.fullName || !payload?.email) {
+//                 reject({
+//                     errCode: 1,
+//                     errMessage: 'Missing data input !',
+//                 });
+//             } else {
+//                 let data = {};
+//                 if (payload.isNewUser) {
+//                     console.log(payload);
+//                     await User.create(payload);
+//                 }
+//                 data = await User.findOne({ uid: payload.uid });
+//                 resolve({
+//                     errCode: 0,
+//                     errMessage: 'Authentication success !',
+//                     data,
+//                 });
+//             }
+//         } catch (error) {
+//             reject(error);
+//         }
+//     });
+// };
 
 const handleRegister = (payload) => {
     return new Promise(async (resolve, reject) => {
@@ -127,4 +127,4 @@ const handleGetMe = (payload) => {
     });
 };
 
-export { handleAuthWithPlugin, handleRegister, handleLogin, handleLogout, handleGetMe, handleRefreshToken };
+export { handleRegister, handleLogin, handleLogout, handleGetMe, handleRefreshToken };

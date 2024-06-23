@@ -14,7 +14,6 @@ const verifyAssessToken = async (req, res, next) => {
         }
         const accessToken = token.split('Bearer ')[1];
         const decoded = jwt.verify(accessToken, process.env.SECRET_TOKEN);
-        // await admin.auth().verifyIdToken(accessToken);
         req.userId = decoded.sub;
         req.token = accessToken;
         req.expire = decoded.exp;
