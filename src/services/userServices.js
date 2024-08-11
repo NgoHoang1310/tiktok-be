@@ -4,6 +4,7 @@ import Follow from '../models/Follow';
 import ApiError from '../utils/apiError';
 import { StatusCodes } from 'http-status-codes';
 import uploadFile from '../utils/uploadFile';
+import deleteFile from '../utils/deleteFile';
 
 const handleGetAUser = (payload) => {
     return new Promise(async (resolve, reject) => {

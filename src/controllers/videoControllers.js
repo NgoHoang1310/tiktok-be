@@ -24,7 +24,6 @@ const getVideos = async (req, res, next) => {
 const getVideosProfile = async (req, res, next) => {
     try {
         const payload = { userId: req.params.id, ...req.query };
-        // if (req.query.viewable) payload.viewable = req.query.viewable;
         const { data, pagination } = await videoServices.handleGetVideosProfile(payload);
         return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data, pagination });
     } catch (error) {
