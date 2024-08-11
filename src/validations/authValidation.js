@@ -3,7 +3,7 @@ import Joi from 'joi';
 const register = async (req, res, next) => {
     const schema = Joi.object({
         fullName: Joi.string().required(),
-        nickName: Joi.string().required(),
+        tiktokID: Joi.string().required(),
         email: Joi.string()
             .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
             .required(),
@@ -15,7 +15,7 @@ const register = async (req, res, next) => {
     try {
         await schema.validateAsync({
             fullName: payload.fullName,
-            nickName: payload.nickName,
+            tiktokID: payload.tiktokID,
             email: payload.email,
             password: payload.password,
         });
@@ -42,4 +42,5 @@ const login = async (req, res, next) => {
         next(error);
     }
 };
+
 export { register, login };

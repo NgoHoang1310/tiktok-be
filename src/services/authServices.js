@@ -40,9 +40,9 @@ const handleRegister = (payload) => {
         try {
             let data = {};
 
-            let user = await User.findOne({ email: payload.email });
+            let user = await User.findOne({ $or: [{ email: payload.email }, { tiktokID: payload.tiktokID }] });
             if (user) {
-                throw new ApiError(StatusCodes.CONFLICT, 'Email already exists. Please try again !');
+                throw new ApiError(StatusCodes.CONFLICT, 'Email or TiktokID already exists. Please try again !');
             }
 
             let encodedPassword = bcrypt.hashPassword(payload.password);
@@ -50,7 +50,7 @@ const handleRegister = (payload) => {
                 throw new ApiError(StatusCodes.CONFLICT, 'Hash password error!');
             }
 
-            data = await User.create({ ...payload, password: encodedPassword });
+            data = await User.create({ ...payload, password: encodedPassword, nickName: payload.fullName });
             resolve(data);
         } catch (error) {
             reject(error);
@@ -71,7 +71,7 @@ const handleLogin = (payload) => {
                 let accessToken = generateAccessToken({ sub: user._id });
                 let refreshToken = generateRefreshToken({ sub: user._id });
 
-                await client.set(user._id.toString(), refreshToken, { EX: 3600 });
+                await client.set(user._id.toString(), refreshToken, { EX: 604800 });
 
                 data.accessToken = accessToken;
                 data.refreshToken = refreshToken;

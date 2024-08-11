@@ -1,20 +1,55 @@
-import { log } from 'firebase-functions/logger';
+import mongoose from 'mongoose';
 import User from '../models/User';
 import Follow from '../models/Follow';
 import ApiError from '../utils/apiError';
 import { StatusCodes } from 'http-status-codes';
+import uploadFile from '../utils/uploadFile';
 
 const handleGetAUser = (payload) => {
     return new Promise(async (resolve, reject) => {
         try {
             let data = {};
-            data = await User.findOne({ _id: payload?.sub });
+            data = await User.findOne({ _id: payload });
             resolve(data);
         } catch (error) {
             reject(error);
         }
     });
 };
+
+const handleGetUserProfile = (payload) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            let data = {};
+            data = await User.findOne({ _destroy: false, tiktokID: payload.tiktokID }, { password: 0 });
+            resolve(data);
+        } catch (error) {
+            reject(error);
+        }
+    });
+};
+
+const handleUpdateUser = (payload) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            let data = {};
+            const response = await uploadFile(`avatars`, payload);
+            if (!response) {
+                throw new ApiError(StatusCodes.BAD_REQUEST, 'Upload Failed!');
+            }
+
+            data = await User.findOneAndUpdate(
+                { _id: payload.userId },
+                { tiktokID: payload.tiktokID, avatar: response[0], nickName: payload.nickName, bio: payload.bio },
+                { new: true },
+            );
+            resolve(data);
+        } catch (error) {
+            reject(error);
+        }
+    });
+};
+
 const handleUnFollowAUser = (payload) => {
     return new Promise(async (resolve, reject) => {
         try {
@@ -43,15 +78,54 @@ const handleFollowAUser = (payload) => {
     });
 };
 
-const handleGetFollowings = (payload) => {
+const handleGetFollowingUsers = (payload) => {
     return new Promise(async (resolve, reject) => {
         try {
             let data = [];
-            data = await Follow.find({ followerId: payload });
-            resolve(data);
+
+            const options = {
+                page: payload.page || 1,
+                limit: payload.limit || 3,
+                customLabels: {
+                    meta: 'paginator',
+                },
+                sort: {
+                    [payload.sort || 'createdAt']: payload.order || 'desc',
+                },
+            };
+
+            const filter = {
+                followerId: new mongoose.Types.ObjectId(payload),
+            };
+
+            const pipeline = [
+                {
+                    $match: filter,
+                },
+                {
+                    $lookup: {
+                        from: 'users',
+                        localField: 'followingId',
+                        foreignField: '_id',
+                        as: 'userInfo',
+                    },
+                },
+                {
+                    $unwind: '$userInfo',
+                },
+            ];
+            data = await Follow.aggregatePaginate(Follow.aggregate(pipeline), options);
+            resolve({ data: data.docs, pagination: data.paginator });
         } catch (error) {
             reject(error);
         }
     });
 };
-export { handleGetAUser, handleFollowAUser, handleUnFollowAUser, handleGetFollowings };
+export {
+    handleGetAUser,
+    handleUpdateUser,
+    handleGetUserProfile,
+    handleFollowAUser,
+    handleUnFollowAUser,
+    handleGetFollowingUsers,
+};

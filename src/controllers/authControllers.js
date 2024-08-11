@@ -14,7 +14,6 @@ const authWithPlugin = async (req, res) => {
 const register = async (req, res, next) => {
     try {
         const payload = req.body;
-        console.log(payload);
         const data = await authServices.handleRegister(payload);
         return res.status(StatusCodes.CREATED).json({ message: StatusCodes[StatusCodes.CREATED], data: data });
     } catch (error) {

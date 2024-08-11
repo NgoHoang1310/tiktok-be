@@ -5,7 +5,8 @@ const User = new Schema(
     {
         firstName: { type: String },
         lastName: { type: String },
-        fullName: { type: String, require: true },
+        lastName: { type: String },
+        tiktokID: { type: String },
         email: { type: String, require: true },
         password: { type: String, min: 6, require: true },
         nickName: { type: String },

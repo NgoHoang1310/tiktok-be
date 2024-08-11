@@ -1,11 +1,32 @@
 import { userServices } from '../services';
 import { StatusCodes } from 'http-status-codes';
 import ApiError from '../utils/apiError';
+import { userControllers } from '.';
 
 const getAUser = async (req, res, next) => {
     try {
-        const payload = req.query;
+        const payload = req.params;
         const data = await userServices.handleGetAUser(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
+    } catch (error) {
+        next(error);
+    }
+};
+
+const getUserProfile = async (req, res, next) => {
+    try {
+        const payload = { ...req.params, ...req.query };
+        const data = await userServices.handleGetUserProfile(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
+    } catch (error) {
+        next(error);
+    }
+};
+
+const updateUser = async (req, res, next) => {
+    try {
+        const payload = { userId: req.params.id, ...req.body, ...req.file };
+        const data = await userServices.handleUpdateUser(payload);
         return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
     } catch (error) {
         next(error);
@@ -32,14 +53,14 @@ const unfollowAUser = async (req, res, next) => {
     }
 };
 
-const getFollowings = async (req, res, next) => {
+const getFollowingUsers = async (req, res, next) => {
     try {
-        const payload = req.params.id;
-        const data = await userServices.handleGetFollowings(payload);
-        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
+        const payload = { ...req.params, ...req.query };
+        const { data, pagination } = await userServices.handleGetFollowingUsers(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data, pagination });
     } catch (error) {
         next(error);
     }
 };
 
-export { getAUser, followAUser, unfollowAUser, getFollowings };
+export { getAUser, updateUser, getUserProfile, followAUser, unfollowAUser, getFollowingUsers };

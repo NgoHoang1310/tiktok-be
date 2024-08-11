@@ -13,9 +13,30 @@ const uploadVideo = async (req, res, next) => {
 
 const getVideos = async (req, res, next) => {
     try {
-        const payload = req.query;
-        const data = await videoServices.handleGetVideos(payload);
-        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
+        const payload = { ...req.query };
+        const { data, pagination } = await videoServices.handleGetVideos(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data, pagination });
+    } catch (error) {
+        next(error);
+    }
+};
+
+const getVideosProfile = async (req, res, next) => {
+    try {
+        const payload = { userId: req.params.id, ...req.query };
+        // if (req.query.viewable) payload.viewable = req.query.viewable;
+        const { data, pagination } = await videoServices.handleGetVideosProfile(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data, pagination });
+    } catch (error) {
+        next(error);
+    }
+};
+
+const getVideosForyou = async (req, res, next) => {
+    try {
+        const payload = { userId: req.userId, ...req.query };
+        const { data, pagination } = await videoServices.handleGetVideosForyou(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data, pagination });
     } catch (error) {
         next(error);
     }
@@ -23,13 +44,22 @@ const getVideos = async (req, res, next) => {
 
 const getFollowingVideos = async (req, res, next) => {
     try {
+        const payload = { ...req.params, ...req.query };
+        const { data, pagination } = await videoServices.handleGetFollowingVideos(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data, pagination });
+    } catch (error) {
+        next(error);
+    }
+};
+
+const countingView = async (req, res, next) => {
+    try {
         const payload = req.params;
-        console.log(payload);
-        const data = await videoServices.handleGetFollowingVideos(payload);
+        const data = await videoServices.handleCountingView(payload);
         return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data });
     } catch (error) {
         next(error);
     }
 };
 
-export { uploadVideo, getVideos, getFollowingVideos };
+export { uploadVideo, getVideos, getVideosProfile, getVideosForyou, getFollowingVideos, countingView };

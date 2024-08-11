@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const connect = async () => {
     try {
-        await mongoose.connect('mongodb+srv://ngohoang1310:13102003@tiktok-clone.tbxopin.mongodb.net/TikTok', {
+        await mongoose.connect('mongodb://localhost:27017/TikTok', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
