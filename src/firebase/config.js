@@ -1,5 +1,5 @@
 import admin from 'firebase-admin';
-import serviceAccount from './serviceAccount.json' with { type: 'json' };
+import serviceAccount from './serviceAccount.json' assert { type: 'json' };
 
 // Đặt địa chỉ của emulators trong biến môi trường
 process.env.FIRESTORE_EMULATOR_HOST = '127.0.0.1:8080';
