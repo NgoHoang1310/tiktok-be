@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import User from '../models/User';
 import { bcrypt } from '../utils';
 import { generateAccessToken, generateRefreshToken } from '../utils';
-import client from '../configs/connectRD';
+import { client } from '~/configs/connectRD';
 dotenv.config();
 
 // const handleAuthWithPlugin = (payload) => {

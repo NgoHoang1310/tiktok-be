@@ -1,5 +1,15 @@
 {
-    "presets": ["@babel/preset-env"],
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current"
+                },
+                "modules": "auto" // Chỉ sử dụng nếu cần Babel xử lý cả ES Modules và CommonJS
+            }
+        ]
+    ],
     "plugins": [
         [
             "module-resolver",
@@ -14,6 +24,8 @@
             {
                 "deprecatedAssertSyntax": true
             }
-        ]
+        ],
+        ["@babel/transform-runtime"],
+        ["@babel/plugin-transform-modules-commonjs"]
     ]
 }

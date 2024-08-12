@@ -1,7 +1,6 @@
 import { userServices } from '../services';
 import { StatusCodes } from 'http-status-codes';
 import ApiError from '../utils/apiError';
-import { userControllers } from '.';
 
 const getAUser = async (req, res, next) => {
     try {

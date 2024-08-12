@@ -1,7 +1,32 @@
 import { createClient } from 'redis';
+const client = createClient();
 
-const client = await createClient()
-    .on('error', (err) => console.log('Redis Client Error', err))
-    .connect();
+// Xử lý lỗi kết nối
+client.on('error', (err) => {
+    console.error('Redis Client Error', err);
+});
 
-export default client;
+// Kết nối đến Redis server
+async function connectRedis() {
+    if (!client.isOpen) {
+        try {
+            await client.connect();
+            console.log('Redis client connected !');
+        } catch (error) {
+            console.log('Redis client connect failed !');
+        }
+    }
+}
+
+// Ngắt kết nối khỏi Redis server
+async function disconnectRedis() {
+    if (client.isOpen) {
+        try {
+            await client.quit();
+            console.log('Redis client disconnected !');
+        } catch (error) {
+            console.log('Redis client disconnected failed !');
+        }
+    }
+}
+export { client, connectRedis, disconnectRedis };

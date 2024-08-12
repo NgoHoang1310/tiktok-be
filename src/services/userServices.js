@@ -4,17 +4,16 @@ import Follow from '../models/Follow';
 import ApiError from '../utils/apiError';
 import { StatusCodes } from 'http-status-codes';
 import uploadFile from '../utils/uploadFile';
-import deleteFile from '../utils/deleteFile';
 
 const handleGetAUser = (payload) => {
-    return new Promise(async (resolve, reject) => {
-        try {
-            let data = {};
-            data = await User.findOne({ _id: payload });
-            resolve(data);
-        } catch (error) {
-            reject(error);
-        }
+    return new Promise((resolve, reject) => {
+        User.findOne({ _id: payload })
+            .then((data) => {
+                resolve(data);
+            })
+            .catch((error) => {
+                reject(error);
+            });
     });
 };
 

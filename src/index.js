@@ -4,14 +4,16 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import morgan from 'morgan';
 
-import { APIs_V1 } from './src/routes/v1';
-import errorHandler from './src/middlewares/errorHandlingMiddleWare';
-import * as db from './src/configs/connectDB';
+import { APIs_V1 } from './routes/v1/index';
+import errorHandler from './middlewares/errorHandlingMiddleWare';
+import * as db from './configs/connectDB';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
+import * as redis from '~/configs/connectRD';
 
 dotenv.config();
 
+redis.connectRedis();
 db.connect();
 
 const app = express();
