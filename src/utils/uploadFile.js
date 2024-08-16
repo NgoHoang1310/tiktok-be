@@ -8,7 +8,7 @@ const uploadFileToBucket = (file, buffer) => {
             metadata: {
                 contentType: file.metadata.contentType,
             },
-            gzip: true,
+            // gzip: true,
         });
 
         writer.on('finish', async () => {

@@ -385,6 +385,138 @@ const handleGetFollowingVideos = (payload) => {
     });
 };
 
+const handleGetDiscoverVideos = (payload) => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            let data = [];
+            const options = {
+                page: payload.page || 1,
+                limit: payload.limit || 3,
+                customLabels: {
+                    meta: 'paginator',
+                },
+                sort: {
+                    [payload.sort || 'createdAt']: payload.order || 'desc',
+                },
+            };
+
+            const filter = {
+                _destroy: false,
+                viewable: 'public',
+            };
+            if (payload.category) {
+                const keyword = JSON.parse(payload.category)
+                    .map((item, index) => {
+                        if (index !== JSON.parse(payload.category).length - 1) return item + '|';
+                        return item;
+                    })
+                    .join('');
+                filter.hashtags = { $regex: keyword, $options: 'i' };
+            }
+            const pipeline = [
+                {
+                    $match: filter,
+                },
+                {
+                    $lookup: {
+                        from: 'users',
+                        localField: 'userId',
+                        foreignField: '_id',
+                        as: 'userInfo',
+                    },
+                },
+                {
+                    $unwind: '$userInfo',
+                },
+                {
+                    $lookup: {
+                        from: 'follows',
+                        let: { videoOwnerId: '$userId' },
+                        pipeline: [
+                            {
+                                $match: {
+                                    $expr: {
+                                        $and: [
+                                            { $eq: ['$followerId', new mongoose.Types.ObjectId(payload.userId)] },
+                                            { $eq: ['$followingId', '$$videoOwnerId'] },
+                                        ],
+                                    },
+                                },
+                            },
+                        ],
+                        as: 'followInfo',
+                    },
+                },
+                {
+                    $lookup: {
+                        from: 'reactions',
+                        let: { videoId: '$_id' },
+                        pipeline: [
+                            {
+                                $match: {
+                                    $expr: {
+                                        $and: [
+                                            { $eq: ['$userId', new mongoose.Types.ObjectId(payload.userId)] },
+                                            { $eq: ['$reactableId', '$$videoId'] },
+                                        ],
+                                    },
+                                },
+                            },
+                        ],
+                        as: 'reactionInfo',
+                    },
+                },
+                {
+                    $addFields: {
+                        'userInfo.isFollowing': {
+                            $cond: { if: { $gt: [{ $size: '$followInfo' }, 0] }, then: true, else: false },
+                        },
+                        isLiked: {
+                            $gt: [
+                                {
+                                    $size: {
+                                        $filter: {
+                                            input: '$reactionInfo',
+                                            as: 'reaction',
+                                            cond: { $eq: ['$$reaction.reactionType', 'like'] },
+                                        },
+                                    },
+                                },
+                                0,
+                            ],
+                        },
+                        isFavourited: {
+                            $gt: [
+                                {
+                                    $size: {
+                                        $filter: {
+                                            input: '$reactionInfo',
+                                            as: 'reaction',
+                                            cond: { $eq: ['$$reaction.reactionType', 'favourite'] },
+                                        },
+                                    },
+                                },
+                                0,
+                            ],
+                        },
+                    },
+                },
+                {
+                    $project: {
+                        'userInfo.password': 0,
+                        followInfo: 0,
+                        reactionInfo: 0,
+                    },
+                },
+            ];
+            data = await Video.aggregatePaginate(Video.aggregate(pipeline), options);
+            resolve({ data: data.docs, pagination: data.paginator });
+        } catch (error) {
+            reject(error);
+        }
+    });
+};
+
 const handleCountingView = (payload) => {
     return new Promise(async (resolve, reject) => {
         try {
@@ -403,4 +535,5 @@ export {
     handleGetVideosForyou,
     handleGetFollowingVideos,
     handleCountingView,
+    handleGetDiscoverVideos,
 };

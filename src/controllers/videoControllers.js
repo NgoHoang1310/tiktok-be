@@ -51,6 +51,16 @@ const getFollowingVideos = async (req, res, next) => {
     }
 };
 
+const getDiscoverVideos = async (req, res, next) => {
+    try {
+        const payload = req.query;
+        const { data, pagination } = await videoServices.handleGetDiscoverVideos(payload);
+        return res.status(StatusCodes.OK).json({ message: StatusCodes[StatusCodes.OK], data, pagination });
+    } catch (error) {
+        next(error);
+    }
+};
+
 const countingView = async (req, res, next) => {
     try {
         const payload = req.params;
@@ -61,4 +71,12 @@ const countingView = async (req, res, next) => {
     }
 };
 
-export { uploadVideo, getVideos, getVideosProfile, getVideosForyou, getFollowingVideos, countingView };
+export {
+    uploadVideo,
+    getVideos,
+    getVideosProfile,
+    getVideosForyou,
+    getFollowingVideos,
+    getDiscoverVideos,
+    countingView,
+};

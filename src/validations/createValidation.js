@@ -25,4 +25,23 @@ const postReaction = async (req, res, next) => {
     }
 };
 
-export { postReaction };
+const createHashtag = async (req, res, next) => {
+    const schema = Joi.object({
+        hashtag: Joi.string()
+            .required()
+            .pattern(new RegExp(/^[a-zA-Z0-9][^\.^\#^\s]+$/)),
+    });
+
+    const payload = req.body;
+
+    try {
+        await schema.validateAsync({
+            hashtag: payload.hashtag,
+        });
+        next();
+    } catch (error) {
+        next(error);
+    }
+};
+
+export { postReaction, createHashtag };

@@ -4,3 +4,4 @@ export * as commentServices from './commentServices';
 export * as videoServices from './videoServices';
 export * as userServices from './userServices';
 export * as reactionServices from './reactionServices';
+export * as hashtagServices from './hashtagServices';

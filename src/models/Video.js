@@ -12,6 +12,7 @@ const Video = new Schema(
         description: { type: String },
         music: { type: String },
         allows: { type: Array },
+        hashtags: { type: Array },
         viewable: { type: String },
         viewsCount: { type: Number, default: 0 },
         commentsCount: { type: Number, default: 0 },

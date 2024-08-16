@@ -33,6 +33,7 @@ const handleGetCommentsVideo = (payload) => {
                 'commentator.tiktokID': 1,
                 'commentator.avatar': 1,
                 'commentator.tick': 1,
+                'commentator._id': 1,
                 updatedAt: 1,
                 createdAt: 1,
             };

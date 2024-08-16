@@ -9,6 +9,7 @@ const router = express.Router();
 
 router.route('/').get(videoControllers.getVideos);
 router.route('/foryou').get(jwt.verifyAssessToken, videoControllers.getVideosForyou);
+router.route('/discover').get(videoControllers.getDiscoverVideos);
 router.route('/:id/profile').get(videoControllers.getVideosProfile);
 router.route('/following/:userId').get(videoControllers.getFollowingVideos);
 router.route('/upload').post(jwt.verifyAssessToken, upload.single('filePath'), videoControllers.uploadVideo);
