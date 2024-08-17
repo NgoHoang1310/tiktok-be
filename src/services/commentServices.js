@@ -18,18 +18,19 @@ const handleGetCommentsVideo = (payload) => {
                 },
             };
 
-            const filter = {
+            let filter = {
                 _destroy: false,
                 videoId: new mongoose.Types.ObjectId(payload.videoId),
                 parentId: null,
             };
 
-            const project = {
+            let project = {
                 videoId: 1,
                 userId: 1,
                 parentId: 1,
                 content: 1,
                 repliesCount: 1,
+                likesCount: 1,
                 'commentator.tiktokID': 1,
                 'commentator.avatar': 1,
                 'commentator.tick': 1,
@@ -38,7 +39,7 @@ const handleGetCommentsVideo = (payload) => {
                 createdAt: 1,
             };
 
-            const pipeline = [
+            let pipeline = [
                 {
                     $match: filter,
                 },
@@ -51,6 +52,10 @@ const handleGetCommentsVideo = (payload) => {
                     },
                 },
                 {
+                    $unwind: '$commentator',
+                },
+
+                {
                     $lookup: {
                         from: 'comments',
                         localField: '_id',
@@ -58,19 +63,68 @@ const handleGetCommentsVideo = (payload) => {
                         as: 'replies',
                     },
                 },
+
                 {
                     $addFields: {
                         repliesCount: { $size: '$replies' },
                     },
-                },
-                {
-                    $unwind: '$commentator',
                 },
 
                 {
                     $project: project,
                 },
             ];
+
+            if (payload.userId) {
+                pipeline = [
+                    ...pipeline,
+                    {
+                        $lookup: {
+                            from: 'reactions',
+                            let: { commentId: '$_id' },
+                            pipeline: [
+                                {
+                                    $match: {
+                                        $expr: {
+                                            $and: [
+                                                {
+                                                    $eq: ['$userId', new mongoose.Types.ObjectId(payload.userId)],
+                                                },
+                                                { $eq: ['$reactableId', '$$commentId'] },
+                                            ],
+                                        },
+                                    },
+                                },
+                            ],
+                            as: 'reactionInfo',
+                        },
+                    },
+                    {
+                        $addFields: {
+                            isLiked: {
+                                $gt: [
+                                    {
+                                        $size: {
+                                            $filter: {
+                                                input: '$reactionInfo',
+                                                as: 'reaction',
+                                                cond: { $eq: ['$$reaction.reactionType', 'like'] },
+                                            },
+                                        },
+                                    },
+                                    0,
+                                ],
+                            },
+                        },
+                    },
+                    {
+                        $project: {
+                            ...project,
+                            isLiked: 1,
+                        },
+                    },
+                ];
+            }
 
             if (payload.parentId) {
                 filter.parentId = new mongoose.Types.ObjectId(payload.parentId);

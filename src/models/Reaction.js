@@ -1,5 +1,6 @@
 import { ObjectId } from 'mongodb';
 import Video from './Video';
+import Comment from './Comment';
 import mongoose from 'mongoose';
 import aggregatePaginate from 'mongoose-aggregate-paginate-v2';
 const Schema = mongoose.Schema;
@@ -18,6 +19,14 @@ const Reaction = new Schema(
 Reaction.plugin(aggregatePaginate);
 
 Reaction.post('save', async (doc) => {
+    if (doc.reactableType === 'Comment') {
+        switch (doc.reactionType) {
+            case 'like':
+                await Comment.findByIdAndUpdate(doc.reactableId, { $inc: { likesCount: 1 } });
+                break;
+        }
+        return;
+    }
     switch (doc.reactionType) {
         case 'like':
             await Video.findByIdAndUpdate(doc.reactableId, { $inc: { likesCount: 1 } });
@@ -29,6 +38,14 @@ Reaction.post('save', async (doc) => {
 });
 
 Reaction.post('findOneAndDelete', async (doc) => {
+    if (doc.reactableType === 'Comment') {
+        switch (doc.reactionType) {
+            case 'like':
+                await Comment.findByIdAndUpdate(doc.reactableId, { $inc: { likesCount: -1 } });
+                break;
+        }
+        return;
+    }
     switch (doc.reactionType) {
         case 'like':
             await Video.findByIdAndUpdate(doc.reactableId, { $inc: { likesCount: -1 } });

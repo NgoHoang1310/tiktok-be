@@ -10,6 +10,7 @@ const Comment = new Schema(
         userId: { type: ObjectId, ref: 'User' },
         parentId: { type: ObjectId, default: null },
         content: { type: String },
+        likesCount: { type: Number, default: 0 },
         _destroy: { type: Boolean, default: false },
     },
     { timestamps: true, versionKey: false },
