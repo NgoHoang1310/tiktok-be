@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "tiktokID": "hoangdcttk72",
+  "email": "ngohoang1310@gmail.com",
+  "password": "$2b$10$BQwPPXcBbP7HxdzSFTSoDeiC6T.rkenzaAhZIBlbKcVkP5Ro0gpLm",
+  "nickName": "Ngô Tuấn Hoàng",
+  "tick": false,
+  "followingsCount": 2,
+  "followersCount": 2,
+  "likesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-13T04:39:10.834Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T06:47:17.820Z"
+  },
+  "avatar": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/avatars%2Fu_66bae36eb183d8cdfe086e0b%2Favatar.jpeg?alt=media&token=20989f6c-f2e9-4b8b-8676-bacb7ac568b2",
+  "bio": "Hello anh em !"
+},
+{
+  "_id": {
+    "$oid": "66bb0ddb4265cfe6ceefca43"
+  },
+  "tiktokID": "MayBae",
+  "email": "may@gmail.com",
+  "password": "$2b$10$jr5fu2hTiV17p0aEka960OpUaR949iM2CSHK6aSU1M4j.wZ8j/26W",
+  "nickName": "May",
+  "tick": false,
+  "followingsCount": 2,
+  "followersCount": 2,
+  "likesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-13T07:40:11.886Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T06:47:06.918Z"
+  },
+  "avatar": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/avatars%2Fu_66bb0ddb4265cfe6ceefca43%2Fcar-2151324_1920.jpg?alt=media&token=ff38fb63-21a1-4b2c-91c1-ad999911348a"
+},
+{
+  "_id": {
+    "$oid": "66bca45e616bd1a053eb97ec"
+  },
+  "tiktokID": "ngotayto",
+  "email": "lengo@gmail.com",
+  "password": "$2b$10$nWH.iD8ajYHSCXicd5I2yuvop.F0Blf5a41UhLKCeUION9rgXLhy.",
+  "nickName": "Lê Minh Ngọ",
+  "tick": false,
+  "followingsCount": 0,
+  "followersCount": 1,
+  "likesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T12:34:38.781Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T11:36:42.822Z"
+  },
+  "avatar": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/avatars%2Fu_66bca45e616bd1a053eb97ec%2Fconan.jpeg?alt=media&token=82f6020f-1a31-447e-a906-c960dc93b237"
+},
+{
+  "_id": {
+    "$oid": "66bd698deefda315a45bba71"
+  },
+  "tiktokID": "cuongcon",
+  "email": "phanvancuong23052003@gmail.com",
+  "password": "$2b$10$4UYOiDVTBp7tM9mESD1XOO3TAoP1X1X6Gj7F.zVGcm7uikb2IXICW",
+  "nickName": "Phan Văn Cường",
+  "tick": false,
+  "followingsCount": 1,
+  "followersCount": 0,
+  "likesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T02:35:57.072Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T02:47:13.179Z"
+  }
+}]

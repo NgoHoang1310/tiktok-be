@@ -1,5 +1,10 @@
 import { createClient } from 'redis';
-const client = createClient();
+const client = createClient({
+    socket: {
+        host: process.env.REDIS_HOST,
+        port: process.env.REDIS_PORT,
+    },
+});
 
 // Xử lý lỗi kết nối
 client.on('error', (err) => {

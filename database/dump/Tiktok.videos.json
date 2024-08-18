@@ -1,0 +1,488 @@
+[{
+  "_id": {
+    "$oid": "66bb674f423ad7435cd364a7"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FR%E1%BB%ABng%20xanh%20vang%20ti%E1%BA%BFng%20ta%20l%C6%B0_video?alt=media&token=fd03bcc4-07ed-4f46-a8b1-830ea6eea288",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FR%E1%BB%ABng%20xanh%20vang%20ti%E1%BA%BFng%20ta%20l%C6%B0_thumbnail?alt=media&token=c398ecce-78f4-4422-94b5-5e49a2def8c8",
+  "description": "Rừng xanh vang tiếng ta lư",
+  "allows": [
+    "comment"
+  ],
+  "viewable": "public",
+  "viewsCount": 172,
+  "commentsCount": 2,
+  "likesCount": 2,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-13T14:01:51.410Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:20:24.536Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bb74c5423ad7435cd3656d"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FJar%20of%20love_video?alt=media&token=5f61bf2b-6652-4f5e-9159-390132df1c36",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FJar%20of%20love_thumbnail?alt=media&token=6611340b-f638-4794-9620-d965f59fca36",
+  "description": "Jar of love",
+  "allows": [
+    "comment"
+  ],
+  "viewable": "public",
+  "viewsCount": 33,
+  "commentsCount": 4,
+  "likesCount": 1,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-13T14:59:17.690Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:00:29.347Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bb822f423ad7435cd3668c"
+  },
+  "userId": {
+    "$oid": "66bb0ddb4265cfe6ceefca43"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bb0ddb4265cfe6ceefca43%2FAnh%20th%C3%B4i%20nh%C3%A2n%20nh%C6%B0%E1%BB%A3ng%20remix_video?alt=media&token=b5309daf-47e6-4703-8694-194dc94e5713",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bb0ddb4265cfe6ceefca43%2FAnh%20th%C3%B4i%20nh%C3%A2n%20nh%C6%B0%E1%BB%A3ng%20remix_thumbnail?alt=media&token=f8d15c86-949e-44bd-92b2-d07962db1a9b",
+  "description": "Anh thôi nhân nhượng remix",
+  "allows": [
+    "comment"
+  ],
+  "viewable": "public",
+  "viewsCount": 22,
+  "commentsCount": 2,
+  "likesCount": 2,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-13T15:56:31.498Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T10:45:04.018Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bc8d0c13929af7d62e402c"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FDancin%20%3Ca%20href%3D%22%23Mace%20Windu%22%20class%3D%22hashtags%22%3E%23Mace%20Windu%3C%2Fa%3E%3Ca%20href%3D%22%23Hammerhead%22%20class%3D%22hashtags%22%3E%23Hammerhead%3C%2Fa%3E_video?alt=media&token=34e370a7-84d3-4e69-9016-57255a80b4fd",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FDancin%20%3Ca%20href%3D%22%23Mace%20Windu%22%20class%3D%22hashtags%22%3E%23Mace%20Windu%3C%2Fa%3E%3Ca%20href%3D%22%23Hammerhead%22%20class%3D%22hashtags%22%3E%23Hammerhead%3C%2Fa%3E_thumbnail?alt=media&token=9a2fcdb2-e6bf-4419-8324-96d6f58aeba0",
+  "description": "Dancin <a href=\"#Mace Windu\" class=\"hashtags\">#Mace Windu</a><a href=\"#Hammerhead\" class=\"hashtags\">#Hammerhead</a>",
+  "allows": [
+    "comment"
+  ],
+  "viewable": "public",
+  "viewsCount": 15,
+  "commentsCount": 0,
+  "likesCount": 2,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T10:55:08.921Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:22:01.658Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bc8f5a13929af7d62e4046"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FH%C3%A0nh%20kh%C3%BAc%20ng%C3%A0y%20v%C3%A0%20%C4%91%C3%AAm%20%3Ca%20href%3D%22%2Ftag%2FHas%20Obbit%22%20class%3D%22hashtags%22%3E%23Has%20Obbit%3C%2Fa%3E_video?alt=media&token=b3c24c28-a47c-4bd8-951a-ad1807fe17d6",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FH%C3%A0nh%20kh%C3%BAc%20ng%C3%A0y%20v%C3%A0%20%C4%91%C3%AAm%20%3Ca%20href%3D%22%2Ftag%2FHas%20Obbit%22%20class%3D%22hashtags%22%3E%23Has%20Obbit%3C%2Fa%3E_thumbnail?alt=media&token=31db847b-cc51-40d9-9067-86fa21926c38",
+  "description": "Hành khúc ngày và đêm <a href=\"/tag/Has Obbit\" class=\"hashtags\">#Has Obbit</a>",
+  "allows": [
+    "comment"
+  ],
+  "viewable": "public",
+  "viewsCount": 9,
+  "commentsCount": 0,
+  "likesCount": 1,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T11:04:58.363Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T10:13:34.064Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bca4ae616bd1a053eb97f5"
+  },
+  "userId": {
+    "$oid": "66bca45e616bd1a053eb97ec"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bca45e616bd1a053eb97ec%2FDespacito_video?alt=media&token=26333ac1-ad08-4ac7-bc7e-1926eabc8d85",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bca45e616bd1a053eb97ec%2FDespacito_thumbnail?alt=media&token=80a4ee3e-86cf-45e5-802e-be5c31c4cc22",
+  "description": "Despacito",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [],
+  "viewable": "public",
+  "viewsCount": 3,
+  "commentsCount": 0,
+  "likesCount": 0,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T12:35:58.464Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T08:09:13.217Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bca4e0616bd1a053eb97fc"
+  },
+  "userId": {
+    "$oid": "66bca45e616bd1a053eb97ec"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bca45e616bd1a053eb97ec%2FNh%E1%BA%A1c%20xinh%20%3Ca%20href%3D%22%2Ftag%2FHarter%20Kalonia%22%20class%3D%22hashtags%22%3E%23Harter%20Kalonia%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2FNahdar%20Vebb%22%20class%3D%22hashtags%22%3E%23Nahdar%20Vebb%3C%2Fa%3E_video?alt=media&token=21933d47-d65a-4d41-8a94-4f2aa4440061",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bca45e616bd1a053eb97ec%2FNh%E1%BA%A1c%20xinh%20%3Ca%20href%3D%22%2Ftag%2FHarter%20Kalonia%22%20class%3D%22hashtags%22%3E%23Harter%20Kalonia%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2FNahdar%20Vebb%22%20class%3D%22hashtags%22%3E%23Nahdar%20Vebb%3C%2Fa%3E_thumbnail?alt=media&token=30d0ab27-51c3-4b10-8cc0-4c8ca329265d",
+  "description": "Nhạc xinh <a href=\"/tag/Harter Kalonia\" class=\"hashtags\">#Harter Kalonia</a><a href=\"/tag/Nahdar Vebb\" class=\"hashtags\">#Nahdar Vebb</a>",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [],
+  "viewable": "public",
+  "viewsCount": 7,
+  "commentsCount": 0,
+  "likesCount": 1,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T12:36:48.601Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T10:18:29.010Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bca5db616bd1a053eb9810"
+  },
+  "userId": {
+    "$oid": "66bca45e616bd1a053eb97ec"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bca45e616bd1a053eb97ec%2FUmbrella%20%3Ca%20href%3D%22%2Ftag%2FHera%20Syndulla%22%20class%3D%22hashtags%22%3E%23Hera%20Syndulla%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2FUnkar%20Plutt%22%20class%3D%22hashtags%22%3E%23Unkar%20Plutt%3C%2Fa%3E_video?alt=media&token=d0087040-9c83-45b7-91f1-b71d0cd8e05f",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bca45e616bd1a053eb97ec%2FUmbrella%20%3Ca%20href%3D%22%2Ftag%2FHera%20Syndulla%22%20class%3D%22hashtags%22%3E%23Hera%20Syndulla%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2FUnkar%20Plutt%22%20class%3D%22hashtags%22%3E%23Unkar%20Plutt%3C%2Fa%3E_thumbnail?alt=media&token=0f271df0-7903-4383-a4c5-e57da8270755",
+  "description": "Umbrella <a href=\"/tag/Hera Syndulla\" class=\"hashtags\">#Hera Syndulla</a><a href=\"/tag/Unkar Plutt\" class=\"hashtags\">#Unkar Plutt</a>",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [
+    "Hera Syndulla",
+    "Unkar Plutt"
+  ],
+  "viewable": "public",
+  "viewsCount": 13,
+  "commentsCount": 1,
+  "likesCount": 2,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T12:40:59.592Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:17:17.343Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bcd6ab1d66648b685ac152"
+  },
+  "userId": {
+    "$oid": "66bca45e616bd1a053eb97ec"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bca45e616bd1a053eb97ec%2F%22%C4%90%E1%BB%ABng%20kh%C3%B3c%20nh%C6%B0%20v%C3%A2y%22%20%3Ca%20href%3D%22%2Ftag%2Fnhacchill%22%20class%3D%22hashtags%22%3E%23nhacchill%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fxuhuong%22%20class%3D%22hashtags%22%3E%23xuhuong%3C%2Fa%3E_video?alt=media&token=d9e88113-a31b-4dcc-b031-ec2c854c7115",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bca45e616bd1a053eb97ec%2F%22%C4%90%E1%BB%ABng%20kh%C3%B3c%20nh%C6%B0%20v%C3%A2y%22%20%3Ca%20href%3D%22%2Ftag%2Fnhacchill%22%20class%3D%22hashtags%22%3E%23nhacchill%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fxuhuong%22%20class%3D%22hashtags%22%3E%23xuhuong%3C%2Fa%3E_thumbnail?alt=media&token=6e911415-7fb2-495d-a0ee-98e76d8e71b5",
+  "description": "\"Đừng khóc như vây\" <a href=\"/tag/nhacchill\" class=\"hashtags\">#nhacchill</a><a href=\"/tag/xuhuong\" class=\"hashtags\">#xuhuong</a>",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [
+    "nhacchill",
+    "xuhuong"
+  ],
+  "viewable": "public",
+  "viewsCount": 12,
+  "commentsCount": 0,
+  "likesCount": 2,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T16:09:15.919Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T07:24:14.294Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bd6a7beefda315a45bba8a"
+  },
+  "userId": {
+    "$oid": "66bd698deefda315a45bba71"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bd698deefda315a45bba71%2FKh%C3%A1t%20v%E1%BB%8Dng%20tu%E1%BB%95i%20tr%E1%BA%BB%20remix%20%3Ca%20href%3D%22%2Ftag%2Fnhacremix%22%20class%3D%22hashtags%22%3E%23nhacremix%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fnhacdo%22%20class%3D%22hashtags%22%3E%23nhacdo%3C%2Fa%3E_video?alt=media&token=eb78c2b0-fee2-4843-9a02-ab133e4ce5db",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bd698deefda315a45bba71%2FKh%C3%A1t%20v%E1%BB%8Dng%20tu%E1%BB%95i%20tr%E1%BA%BB%20remix%20%3Ca%20href%3D%22%2Ftag%2Fnhacremix%22%20class%3D%22hashtags%22%3E%23nhacremix%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fnhacdo%22%20class%3D%22hashtags%22%3E%23nhacdo%3C%2Fa%3E_thumbnail?alt=media&token=86eada5e-21ce-4b6d-b75a-be62cc75f032",
+  "description": "Khát vọng tuổi trẻ remix <a href=\"/tag/nhacremix\" class=\"hashtags\">#nhacremix</a><a href=\"/tag/nhacdo\" class=\"hashtags\">#nhacdo</a>",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [
+    "nhacremix",
+    "nhacdo"
+  ],
+  "viewable": "public",
+  "viewsCount": 5,
+  "commentsCount": 0,
+  "likesCount": 1,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T02:39:55.751Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T10:14:16.282Z"
+  },
+  "music": "Âm thanh gốc"
+},
+{
+  "_id": {
+    "$oid": "66bd78dfeefda315a45bbb8d"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FAt%20my%20worst%20%3Ca%20href%3D%22%2Ftag%2Fnhacchill%22%20class%3D%22hashtags%22%3E%23nhacchill%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fnhactienganh%22%20class%3D%22hashtags%22%3E%23nhactienganh%3C%2Fa%3E_video?alt=media&token=adf8467c-07ed-4d98-a568-21141a57a569",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FAt%20my%20worst%20%3Ca%20href%3D%22%2Ftag%2Fnhacchill%22%20class%3D%22hashtags%22%3E%23nhacchill%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fnhactienganh%22%20class%3D%22hashtags%22%3E%23nhactienganh%3C%2Fa%3E_thumbnail?alt=media&token=bb6997ac-f911-4e8b-9a04-f6be71c6346a",
+  "description": "At my worst <a href=\"/tag/nhacchill\" class=\"hashtags\">#nhacchill</a><a href=\"/tag/nhactienganh\" class=\"hashtags\">#nhactienganh</a>",
+  "music": "Âm thanh gốc",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [
+    "nhacchill",
+    "nhactienganh"
+  ],
+  "viewable": "public",
+  "viewsCount": 2,
+  "commentsCount": 0,
+  "likesCount": 1,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T03:41:19.329Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T08:14:44.477Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bd7ad6eefda315a45bbbf5"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2Fthe%20very%20first%20bridge%20%3Ca%20href%3D%22%2Ftag%2Ftaylorswift%22%20class%3D%22hashtags%22%3E%23taylorswift%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Famnhac%22%20class%3D%22hashtags%22%3E%23amnhac%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fnhactienganh%22%20class%3D%22hashtags%22%3E%23nhactienganh%3C%2Fa%3E_video?alt=media&token=737b1e67-8da8-4721-84be-26ae67d36df5",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2Fthe%20very%20first%20bridge%20%3Ca%20href%3D%22%2Ftag%2Ftaylorswift%22%20class%3D%22hashtags%22%3E%23taylorswift%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Famnhac%22%20class%3D%22hashtags%22%3E%23amnhac%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fnhactienganh%22%20class%3D%22hashtags%22%3E%23nhactienganh%3C%2Fa%3E_thumbnail?alt=media&token=0e2c70c1-2d74-4bc9-9685-0df64da632e8",
+  "description": "the very first bridge <a href=\"/tag/taylorswift\" class=\"hashtags\">#taylorswift</a><a href=\"/tag/amnhac\" class=\"hashtags\">#amnhac</a><a href=\"/tag/nhactienganh\" class=\"hashtags\">#nhactienganh</a>",
+  "music": "Âm thanh gốc",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [
+    "taylorswift",
+    "amnhac",
+    "nhactienganh"
+  ],
+  "viewable": "public",
+  "viewsCount": 3,
+  "commentsCount": 0,
+  "likesCount": 1,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T03:49:42.406Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T08:13:38.759Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bd8025eefda315a45bbc5e"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FBeautiful%20Girl%20%3Ca%20href%3D%22%2Ftag%2Fseankingston%22%20class%3D%22hashtags%22%3E%23seankingston%3C%2Fa%3E_video?alt=media&token=4d90040b-fe15-4edf-8ab7-bdf41dc982ca",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FBeautiful%20Girl%20%3Ca%20href%3D%22%2Ftag%2Fseankingston%22%20class%3D%22hashtags%22%3E%23seankingston%3C%2Fa%3E_thumbnail?alt=media&token=4ff3cdfb-ac61-4820-a26d-15458cac8d87",
+  "description": "Beautiful Girl <a href=\"/tag/seankingston\" class=\"hashtags\">#seankingston</a>",
+  "music": "Âm thanh gốc",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [
+    "seankingston"
+  ],
+  "viewable": "public",
+  "viewsCount": 2,
+  "commentsCount": 0,
+  "likesCount": 1,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T04:12:21.791Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T08:15:27.030Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bf0a1ddb62077175ddbe21"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FMcLaren%20720s%20%3Ca%20href%3D%22%2Ftag%2Fxeco%22%20class%3D%22hashtags%22%3E%23xeco%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fsieuxe%22%20class%3D%22hashtags%22%3E%23sieuxe%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fsupercar%22%20class%3D%22hashtags%22%3E%23supercar%3C%2Fa%3E_video?alt=media&token=46e5bc91-764f-4c15-a345-0ab726802b7a",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FMcLaren%20720s%20%3Ca%20href%3D%22%2Ftag%2Fxeco%22%20class%3D%22hashtags%22%3E%23xeco%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fsieuxe%22%20class%3D%22hashtags%22%3E%23sieuxe%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fsupercar%22%20class%3D%22hashtags%22%3E%23supercar%3C%2Fa%3E_thumbnail?alt=media&token=1e41fe06-630a-4cd7-be6f-dfbfc84549bf",
+  "description": "McLaren 720s <a href=\"/tag/xeco\" class=\"hashtags\">#xeco</a><a href=\"/tag/sieuxe\" class=\"hashtags\">#sieuxe</a><a href=\"/tag/supercar\" class=\"hashtags\">#supercar</a>",
+  "music": "Âm thanh gốc",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [
+    "xeco",
+    "sieuxe",
+    "supercar"
+  ],
+  "viewable": "public",
+  "viewsCount": 2,
+  "commentsCount": 0,
+  "likesCount": 1,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-16T08:13:17.574Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T09:18:53.778Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bf2a3c0e5cf892c0609bc6"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FPink%20try%20Remix%20%3Ca%20href%3D%22%2Ftag%2Fnhacremix%22%20class%3D%22hashtags%22%3E%23nhacremix%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fxuhuong%22%20class%3D%22hashtags%22%3E%23xuhuong%3C%2Fa%3E_video?alt=media&token=3360fa75-31d4-49f3-aa25-54dcf01ec789",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FPink%20try%20Remix%20%3Ca%20href%3D%22%2Ftag%2Fnhacremix%22%20class%3D%22hashtags%22%3E%23nhacremix%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fxuhuong%22%20class%3D%22hashtags%22%3E%23xuhuong%3C%2Fa%3E_thumbnail?alt=media&token=a6484c4b-233b-4502-a061-a0ecebff9f89",
+  "description": "Pink try Remix <a href=\"/tag/nhacremix\" class=\"hashtags\">#nhacremix</a><a href=\"/tag/xuhuong\" class=\"hashtags\">#xuhuong</a>",
+  "music": "Âm thanh gốc",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [
+    "nhacremix",
+    "xuhuong"
+  ],
+  "viewable": "public",
+  "viewsCount": 2,
+  "commentsCount": 0,
+  "likesCount": 0,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-16T10:30:20.651Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T05:06:21.136Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c0269d0e5cf892c0609c25"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "filePath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FDeadpool%20Dance%20%3Ca%20href%3D%22%2Ftag%2Fdeadpoolandwolverine%22%20class%3D%22hashtags%22%3E%23deadpoolandwolverine%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fmarvel%22%20class%3D%22hashtags%22%3E%23marvel%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fbyebyebye%22%20class%3D%22hashtags%22%3E%23byebyebye%3C%2Fa%3E_video?alt=media&token=3bd8fa53-8f55-4a12-b5a0-84fd40fa7a3d",
+  "thumbPath": "https://firebasestorage.googleapis.com/v0/b/tiktok-77077.appspot.com/o/videos%2Fu_66bae36eb183d8cdfe086e0b%2FDeadpool%20Dance%20%3Ca%20href%3D%22%2Ftag%2Fdeadpoolandwolverine%22%20class%3D%22hashtags%22%3E%23deadpoolandwolverine%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fmarvel%22%20class%3D%22hashtags%22%3E%23marvel%3C%2Fa%3E%3Ca%20href%3D%22%2Ftag%2Fbyebyebye%22%20class%3D%22hashtags%22%3E%23byebyebye%3C%2Fa%3E_thumbnail?alt=media&token=1dd87a93-5da1-4ada-89ae-62b0f8648ca4",
+  "description": "Deadpool Dance <a href=\"/tag/deadpoolandwolverine\" class=\"hashtags\">#deadpoolandwolverine</a><a href=\"/tag/marvel\" class=\"hashtags\">#marvel</a><a href=\"/tag/byebyebye\" class=\"hashtags\">#byebyebye</a>",
+  "music": "Âm thanh gốc",
+  "allows": [
+    "comment"
+  ],
+  "hashtags": [
+    "deadpoolandwolverine",
+    "marvel",
+    "byebyebye"
+  ],
+  "viewable": "public",
+  "viewsCount": 2,
+  "commentsCount": 0,
+  "likesCount": 0,
+  "sharesCount": 0,
+  "favouritesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-17T04:27:09.201Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T08:10:46.174Z"
+  }
+}]

@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "66bb89516c4b06e0265b78b3"
+  },
+  "followerId": {
+    "$oid": "66bb0ddb4265cfe6ceefca43"
+  },
+  "followingId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-13T16:26:57.138Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-13T16:26:57.138Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bd6c316c4b06e0265bf748"
+  },
+  "followerId": {
+    "$oid": "66bd698deefda315a45bba71"
+  },
+  "followingId": {
+    "$oid": "66bb0ddb4265cfe6ceefca43"
+  },
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T02:47:13.168Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T02:47:13.168Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bda46a6c4b06e0265c20ee"
+  },
+  "followerId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "followingId": {
+    "$oid": "66bb0ddb4265cfe6ceefca43"
+  },
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T06:47:06.901Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T06:47:06.901Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bda4756c4b06e0265c20fe"
+  },
+  "followerId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "followingId": {
+    "$oid": "66bca45e616bd1a053eb97ec"
+  },
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T06:47:17.815Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T06:47:17.815Z"
+  }
+}]

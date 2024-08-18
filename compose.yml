@@ -1,22 +1,64 @@
 version: '3.8'
+
 services:
+    mongo:
+        platform: linux/amd64
+        image: mongo:4.4
+        command: ['mongod', '--bind_ip', '0.0.0.0']
+        container_name: mongodb
+        ports:
+            - '27017:27017'
+        volumes:
+            - ./database/dump:/docker-entrypoint-initdb.d/
+        networks:
+            - app_network
+    mongo-import:
+        platform: linux/amd64
+        image: mongo:4.4
+        depends_on:
+            - mongo
+        command: sh -c "
+            sleep 20 &&
+            mongoimport --host mongodb --db Tiktok --collection users --file /data/Tiktok.users.json --jsonArray && \
+            mongoimport --host mongodb --db Tiktok --collection videos --file /data/Tiktok.videos.json --jsonArray && \
+            mongoimport --host mongodb --db Tiktok --collection reactions --file /data/Tiktok.reactions.json --jsonArray && \
+            mongoimport --host mongodb --db Tiktok --collection hashtags --file /data/Tiktok.hashtags.json --jsonArray && \
+            mongoimport --host mongodb --db Tiktok --collection Follows --file /data/Tiktok.Follows.json --jsonArray && \
+            mongoimport --host mongodb --db Tiktok --collection comments --file /data/Tiktok.comments.json --jsonArray"
+        volumes:
+            - ./database/dump:/data
+        networks:
+            - app_network
+
     redis:
-        image: redis/redis-stack-server:latest
+        platform: linux/amd64
+        image: redis:latest
+        command: ['redis-server', '--bind', '0.0.0.0', '--port', '6379']
         container_name: redis_server
         ports:
             - '6379:6379'
-        env_file:
-            - .env
         networks:
             - app_network
+
     app:
+        platform: linux/amd64
         build: ./
         ports:
             - '8082:8082'
+        env_file:
+            - .env
+        environment:
+            PORT: 8082
+            REDIS_URL: ${REDIS_URL}
+            MONGO_URL: mongodb://mongodb:27017/Tiktok
+            REDIS_HOST: redis
+            REDIS_PORT: 6379
         depends_on:
             - redis
+            - mongo
         networks:
             - app_network
+
 networks:
     app_network:
         driver: bridge

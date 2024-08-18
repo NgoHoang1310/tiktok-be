@@ -38,6 +38,6 @@ app.use('/api/v1', APIs_V1);
 
 app.use(errorHandler);
 
-httpServer.listen(port, () => {
+httpServer.listen(port, '0.0.0.0', () => {
     console.log(`Example app listening on port ${port}`);
 });

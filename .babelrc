@@ -1,15 +1,5 @@
 {
-    "presets": [
-        [
-            "@babel/preset-env",
-            {
-                "targets": {
-                    "node": "current"
-                },
-                "modules": "auto" // Chỉ sử dụng nếu cần Babel xử lý cả ES Modules và CommonJS
-            }
-        ]
-    ],
+    "presets": ["@babel/preset-env"],
     "plugins": [
         [
             "module-resolver",

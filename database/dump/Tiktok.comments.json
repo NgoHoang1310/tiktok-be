@@ -1,0 +1,195 @@
+[{
+  "_id": {
+    "$oid": "66bb8325423ad7435cd366a0"
+  },
+  "videoId": {
+    "$oid": "66bb822f423ad7435cd3668c"
+  },
+  "userId": {
+    "$oid": "66bb0ddb4265cfe6ceefca43"
+  },
+  "parentId": null,
+  "content": "Comment đầu",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-13T16:00:37.641Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-13T16:00:37.641Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bde25ab2411926af3c3fc2"
+  },
+  "videoId": {
+    "$oid": "66bb822f423ad7435cd3668c"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "parentId": null,
+  "content": "hello",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T11:11:22.430Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:05:53.597Z"
+  },
+  "likesCount": 1
+},
+{
+  "_id": {
+    "$oid": "66bde40714e415c6a35ae22f"
+  },
+  "videoId": {
+    "$oid": "66bb674f423ad7435cd364a7"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "parentId": null,
+  "content": "Nhạc chiến quá",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T11:18:31.043Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:05:37.570Z"
+  },
+  "likesCount": 2
+},
+{
+  "_id": {
+    "$oid": "66bec5ec14e415c6a35ae33a"
+  },
+  "videoId": {
+    "$oid": "66bca5db616bd1a053eb9810"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "parentId": null,
+  "content": "hello",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-16T03:22:20.166Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T03:22:20.166Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c07f60644172375b8d1223"
+  },
+  "videoId": {
+    "$oid": "66bb674f423ad7435cd364a7"
+  },
+  "userId": {
+    "$oid": "66bb0ddb4265cfe6ceefca43"
+  },
+  "parentId": {
+    "$oid": "66bde40714e415c6a35ae22f"
+  },
+  "content": "Okk",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-17T10:45:52.215Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:05:47.195Z"
+  },
+  "likesCount": 1
+},
+{
+  "_id": {
+    "$oid": "66c082b00b0dc558593d2c7d"
+  },
+  "videoId": {
+    "$oid": "66bb74c5423ad7435cd3656d"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "parentId": null,
+  "content": "test",
+  "likesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-17T11:00:00.672Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:00:00.672Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c082b70b0dc558593d2c81"
+  },
+  "videoId": {
+    "$oid": "66bb74c5423ad7435cd3656d"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "parentId": {
+    "$oid": "66c082b00b0dc558593d2c7d"
+  },
+  "content": "hello",
+  "likesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-17T11:00:07.570Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:00:07.570Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c082c10b0dc558593d2c85"
+  },
+  "videoId": {
+    "$oid": "66bb74c5423ad7435cd3656d"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "parentId": {
+    "$oid": "66c082b00b0dc558593d2c7d"
+  },
+  "content": "<span>@hoangdcttk72</span>trả lời",
+  "likesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-17T11:00:17.345Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:00:17.345Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c082cd0b0dc558593d2c89"
+  },
+  "videoId": {
+    "$oid": "66bb74c5423ad7435cd3656d"
+  },
+  "userId": {
+    "$oid": "66bae36eb183d8cdfe086e0b"
+  },
+  "parentId": {
+    "$oid": "66c082b00b0dc558593d2c7d"
+  },
+  "content": "bình luận",
+  "likesCount": 0,
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-17T11:00:29.344Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T11:00:29.344Z"
+  }
+}]

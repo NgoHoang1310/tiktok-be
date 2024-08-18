@@ -11,7 +11,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "clean": "rm -rf build && mkdir build",
         "build-babel": "babel ./src -d ./build/src",
-        "build": "npm run clean && npm run build-babel",
+        "build": "npm run clean && npm run build-babel && cp ./src/firebase/serviceAccount.json ./build/src/firebase",
         "production": "npm run build && node ./build/src/index.js",
         "dev": "nodemon --exec babel-node ./src/index.js",
         "start": "node ./build/src/index.js"

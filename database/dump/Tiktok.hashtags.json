@@ -1,0 +1,273 @@
+[{
+  "_id": {
+    "$oid": "66bcca7f1d66648b685ac0f4"
+  },
+  "hashtag": "amthuc",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T15:17:19.553Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T15:17:19.553Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bcca891d66648b685ac0f6"
+  },
+  "hashtag": "doisong",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T15:17:29.564Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T15:17:29.564Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bcca8f1d66648b685ac0f8"
+  },
+  "hashtag": "xeco",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T15:17:35.046Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T15:17:35.046Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bcca971d66648b685ac0fa"
+  },
+  "hashtag": "phuongtiengiaothong",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T15:17:43.034Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T15:17:43.034Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bcca9d1d66648b685ac0fc"
+  },
+  "hashtag": "amnhac",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T15:17:49.939Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T15:17:49.939Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bccaa51d66648b685ac0fe"
+  },
+  "hashtag": "nhachiendai",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T15:17:57.838Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T15:17:57.838Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bccaae1d66648b685ac100"
+  },
+  "hashtag": "nhacremix",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T15:18:06.240Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T15:18:06.240Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bccaba1d66648b685ac102"
+  },
+  "hashtag": "nhacxua",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T15:18:18.457Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T15:18:18.457Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bccac31d66648b685ac104"
+  },
+  "hashtag": "giaitri",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T15:18:27.013Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T15:18:27.013Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bcd5a31d66648b685ac13f"
+  },
+  "hashtag": "maytinh",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T16:04:51.574Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T16:04:51.574Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bcd6971d66648b685ac14d"
+  },
+  "hashtag": "nhacchill",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T16:08:55.022Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T16:08:55.022Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bcd6a51d66648b685ac150"
+  },
+  "hashtag": "xuhuong",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-14T16:09:09.223Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-14T16:09:09.223Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bd6a72eefda315a45bba88"
+  },
+  "hashtag": "nhacdo",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T02:39:46.381Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T02:39:46.381Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bd78d6eefda315a45bbb8b"
+  },
+  "hashtag": "nhactienganh",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T03:41:10.539Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T03:41:10.539Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bd7aa9eefda315a45bbbef"
+  },
+  "hashtag": "taylorswift",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T03:48:57.729Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T03:48:57.729Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bd7fcaeefda315a45bbc5b"
+  },
+  "hashtag": "seankingston",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-15T04:10:50.452Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T04:10:50.452Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bf0a07db62077175ddbe1b"
+  },
+  "hashtag": "sieuxe",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-16T08:12:55.294Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T08:12:55.294Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66bf0a17db62077175ddbe1f"
+  },
+  "hashtag": "supercar",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-16T08:13:11.596Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T08:13:11.596Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c022550e5cf892c0609c00"
+  },
+  "hashtag": "deadpoolandwolverine",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-17T04:08:53.768Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T04:08:53.768Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c026710e5cf892c0609c1e"
+  },
+  "hashtag": "marvel",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-17T04:26:25.090Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T04:26:25.090Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66c0267d0e5cf892c0609c23"
+  },
+  "hashtag": "byebyebye",
+  "_destroy": false,
+  "createdAt": {
+    "$date": "2024-08-17T04:26:37.704Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T04:26:37.704Z"
+  }
+}]
