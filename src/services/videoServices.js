@@ -59,8 +59,11 @@ const handleGetVideos = (payload) => {
                     },
                 },
             ];
-            data = await Video.aggregatePaginate(Video.aggregate(pipeline), options);
-            resolve({ data: data.docs, pagination: data.paginator });
+            Video.aggregatePaginate(Video.aggregate(pipeline), options).then((result) => {
+                data = result;
+                data.docs = result.docs.sort(() => Math.random() - 0.5);
+                resolve({ data: data.docs, pagination: data.paginator });
+            });
         } catch (error) {
             reject(error);
         }
