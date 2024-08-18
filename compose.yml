@@ -1,4 +1,23 @@
 services:
+    app:
+        platform: linux/amd64
+        build: ./
+        ports:
+            - '8082:8082'
+        env_file:
+            - .env
+        environment:
+            PORT: 8082
+            REDIS_URL: ${REDIS_URL}
+            MONGO_URL: mongodb://mongodb:27017/Tiktok
+            REDIS_HOST: redis
+            REDIS_PORT: 6379
+        depends_on:
+            - redis
+            - mongo
+        networks:
+            - app_network
+
     mongo:
         platform: linux/amd64
         image: mongo:4.4
@@ -35,25 +54,6 @@ services:
         container_name: redis_server
         ports:
             - '6379:6379'
-        networks:
-            - app_network
-
-    app:
-        platform: linux/amd64
-        build: ./
-        ports:
-            - '8082:8082'
-        env_file:
-            - .env
-        environment:
-            PORT: 8082
-            REDIS_URL: ${REDIS_URL}
-            MONGO_URL: mongodb://mongodb:27017/Tiktok
-            REDIS_HOST: redis
-            REDIS_PORT: 6379
-        depends_on:
-            - redis
-            - mongo
         networks:
             - app_network
 
