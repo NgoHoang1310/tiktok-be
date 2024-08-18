@@ -1,6 +1,6 @@
 services:
     - name: mongodb
-      type: background
+      type: web
       env: docker
       plan: starter
       docker:
@@ -13,7 +13,7 @@ services:
           - oregon
 
     - name: mongo-import
-      type: background
+      type: web
       env: docker
       plan: starter
       docker:
@@ -36,7 +36,7 @@ services:
           - oregon
 
     - name: redis
-      type: background
+      type: web
       env: docker
       plan: starter
       docker:
