@@ -20,7 +20,7 @@ const app = express();
 const port = process.env.PORT;
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
-    origin: 'http://localhost:3000',
+    origin: process.env.WEBSOCKET_URL,
     transports: ['websocket'],
 });
 
